@@ -1,0 +1,390 @@
+:root {
+    --blue-color: rgb(62, 100, 255);
+}
+
+* {
+    padding:0;
+    margin: 0; 
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
+body {
+    background-color: rgb(234, 238, 255);
+    
+}
+
+
+    /* font-family: 'Russo One', sans-serif; */
+    /* font-family: 'Rubik', sans-serif; */
+    /* font-family: 'Paytone One', sans-serif; */
+
+
+.container {
+    min-width: 90%; 
+    max-width:  90%;
+    margin: 0 auto; 
+    min-height: 100vh; 
+    background-color: rgb(234, 238, 255);
+}
+
+header nav { 
+    width: 100%; 
+    margin: 0px auto; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Paytone One', sans-serif;
+}
+header nav .logo-container p {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+header nav .logo-container, header nav ul {
+    flex:1; 
+    /* background: red; */
+}
+
+header .logo-container img {
+    height: 10vh;
+}
+
+header nav ul {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 10vh;
+}
+
+.list-item {
+    color: #000; 
+    text-decoration: none;
+    font-family: "Russo One";
+}
+
+.list-item:hover {
+    color:rgb(62, 100, 255);
+    border-bottom: 1px solid rgb(62, 100, 255);
+}
+
+
+.about-me {
+    min-height: calc(100vh - 100px); 
+    width: 90%; 
+    margin: 0 auto; 
+    /* background:rgb(62, 100, 255); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me .cover 
+{
+    text-align: center;
+    flex:1;
+}
+
+.intro {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 20px;
+    /* color:rgb(62, 100, 255); */
+}
+
+.name {
+    font-size: 36px; 
+    font-family: 'Paytone One', sans-serif;
+    color: rgb(62, 100, 255);
+}
+
+.job-title {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 20px;
+}
+
+
+.skills {
+    /* min-height: 300px;  */
+    /* background: red; */
+    font-family: 'Paytone One', sans-serif;
+    padding: 10px;
+    width: 90%; 
+    margin: 0px auto;
+    margin-bottom: 30px;
+}
+
+.skills-title {
+    color: #000;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.skills-container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+}
+
+.skill {
+    /* background: yellow;  */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.299);
+    /* height: 200px; */
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+.skill-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.progress {
+    width: 100%; 
+    /* background: #333; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
+    border-radius: 5px;
+    height: 30px;
+}
+
+.progress-container {
+    width: 90%; 
+    background:rgb(62, 100, 255);
+    height: 100%; 
+}
+
+.about-img {
+    width: 100%; 
+    flex:1;
+}
+
+.projects_container {
+    width: 90%; 
+    margin: 0 auto;
+    font-family: 'Paytone One', sans-serif;
+
+} 
+.projects__title {
+    font-size: 30px;
+    margin: 10px 0px;
+    padding-bottom: 10px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px; 
+    width: 100%; 
+}
+
+.projects img {
+    width: 320px; 
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.projects img:hover {
+    transform: scale(1.1);
+}
+
+.feedbacks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px auto; 
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.card {
+    height: 300px; 
+    width: 300px; 
+    /* background:rgb(62, 100, 255) */
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1.2rem; 
+    padding: 20px;
+
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.card {
+    position: relative; 
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left:0; 
+    height: 40%; 
+    width: 100%; 
+    background-color: rgb(62, 100, 255);
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+}
+.card__image img {
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #fff; 
+}
+.card__image {
+    width: 150px; 
+    height: 150px; 
+    border: 2px solid rgb(62, 100, 255);
+    border-radius: 50%; 
+    z-index: 19;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    
+}
+
+.card .name-profession {
+    /* background: red;  */
+    /* padding: 10px; */
+    margin: 10px;
+}
+
+.card .name {
+    font-size: 20px; 
+    color: #000;
+    text-align: center; 
+}
+.card .profession {
+    text-align: center; 
+    /* font-weight: bold; */
+    font-family: 'Paytone One', sans-serif;
+    
+}
+
+
+/* Style For Contact */
+
+.card .contact {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.card .contact a {
+    cursor: pointer; 
+    color: #fff; 
+    opacity: .5;
+    margin: 5px 0px;
+}
+
+.card .contact a:hover {
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 960px) {
+    .skills-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-me {
+        flex-direction: column;
+        grid-row-gap: 20px;
+    }
+    .about-img {
+        width: 100%; 
+        object-fit: cover;
+        object-position: center; 
+    }
+    header nav {
+        flex-direction: column;
+    }
+    header ul {
+        width: 85%; 
+        margin-bottom: 30px;
+    }
+    .projects img  {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: 1fr ; 
+    }
+    .projects img { 
+        width: 300px; 
+    }
+    .logo-text { 
+        cursor: pointer;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+    }
+    header ul li {
+        /* background: red;  */
+        padding: 10px; 
+        margin: 10px; 
+    }
+    .hide {
+        display: none; 
+    }
+}
+
+footer {
+    width: 100%; 
+    background: rgb(62, 100, 255);
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 150px; 
+    grid-row-gap: 10px;
+    font-family: 'Paytone One', sans-serif;
+    color: #fff; 
+}
+
+
+
+footer .contact a {
+    display: inline-block ; 
+    color: #fff; 
+    opacity: .5;
+    text-decoration: none; 
+    font-size: 20px;
+    margin: 0px 5px;
+}
+
+footer .contact a:hover {
+    opacity: 1;
+}
+
+footer .copyrights {
+    opacity: .5;
+    text-align: center; 
+}
+
+footer .copyrights:hover {
+    opacity: 1;
+}
