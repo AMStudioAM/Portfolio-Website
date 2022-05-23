@@ -186,7 +186,6 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1200px; 
     width: 100%; 
 }
 
