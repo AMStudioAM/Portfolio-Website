@@ -77,6 +77,7 @@ header nav ul {
 
 .about-me {
     min-height: calc(100vh - 100px); 
+    /* height: 200px; */
     width: 90%; 
     margin: 0 auto; 
     /* background:rgb(62, 100, 255); */
@@ -85,7 +86,7 @@ header nav ul {
     justify-content: center;
 }
 
-.about-me .cover 
+.about-me .cover, .about-me .about-cover 
 {
     text-align: center;
     flex:1;
@@ -309,6 +310,12 @@ header nav ul {
     .about-me {
         flex-direction: column;
         grid-row-gap: 20px;
+        min-height: 100px;
+        height: 500px;
+        margin: 10px auto;
+        border-bottom: 2px solid rgb(62, 100, 255);
+        /* padding-bottom: 20px; */
+        /* background: red; */
     }
     .about-img {
         width: 100%; 
